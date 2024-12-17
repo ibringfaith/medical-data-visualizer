@@ -4,13 +4,15 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # 1
-df = None
+df = pd.read_csv('medical_examination.csv', sep=',')
 
 # 2
-df['overweight'] = None
+bmi = df['weight']/(df['height']**2)
+df['overweight'] = 0 if bmi <=25 else 1
 
 # 3
-
+# Normalize data by making 0 always good and 1 always bad. 
+# If the value of cholesterol or gluc is 1, set the value to 0. If the value is more than 1, set the value to 1.
 
 # 4
 def draw_cat_plot():
