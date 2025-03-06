@@ -35,7 +35,7 @@ Modify parameters in the script to customize the analysis.
 
 ## Example
 Here’s an example of a generated heatmap illustrating the correlation between health metrics:
-![Example Heatmap](example_heatmap.png)
+![Example Heatmap](heatmap.png)
 
 ## Testing
 To run tests and validate functionality, execute:
